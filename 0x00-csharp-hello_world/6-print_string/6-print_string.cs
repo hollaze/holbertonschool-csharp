@@ -13,6 +13,5 @@ class Program
                 for (int i = 0; i < 9; i++)
                         Console.Write(str[i]);
                 Console.WriteLine();
-
         }
 }
