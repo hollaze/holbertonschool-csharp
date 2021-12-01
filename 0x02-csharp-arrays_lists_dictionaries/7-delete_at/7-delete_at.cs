@@ -11,7 +11,7 @@ class List
             return (myList);
         }
 
-        myList.Remove(index + 1);
+        myList.Remove(myList[index]);
 
         return (myList);
     }
