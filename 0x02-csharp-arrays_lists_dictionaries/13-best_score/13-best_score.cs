@@ -6,15 +6,18 @@ class Dictionary
 {
     public static string BestScore(Dictionary<string, int> myList)
     {
-        int maxValue;
+        int max;
+        if (myList.Count == 0)
+            return ("None");
 
-        maxValue = myList.Values.Max();
+        max = myList.Values.Max();
 
         foreach (string key in myList.Keys)
         {
-            if (myList[key] == maxValue)
+            if (myList[key] == max)
                 return (key);
         }
+
         return ("None");
     }
 }
