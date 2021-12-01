@@ -6,7 +6,7 @@ class List
 {
     public static int MaxInteger(List<int> myList)
     {
-        if (myList.Count == 0)
+        if (myList.Count == 0 || myList == null)
             return (-1);
 
         myList.Sort();
