@@ -1,23 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 
-// Weird code
-
 class List
 {
     public static int Sum(List<int> myList)
     {
+        List<int> newList = new List<int>();
         int sum = 0;
 
-        myList.Sort();
-
-        for (int i = 0; i < myList.Count; i++)
+        foreach (int value in myList)
         {
-            if (i < myList.Count - 1)
-                if (myList[i] != myList[i + 1])
-                    sum += myList[i];
+            if (!newList.Contains(value))
+                newList.Add(value);
         }
-        sum += myList[myList.Count - 1];
+
+        foreach (int value in newList)
+            sum += value;
+
         return (sum);
     }
 }
