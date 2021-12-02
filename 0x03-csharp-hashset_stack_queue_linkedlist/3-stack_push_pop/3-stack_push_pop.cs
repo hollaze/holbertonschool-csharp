@@ -16,13 +16,21 @@ class MyStack
         else
             Console.WriteLine("Top item: {0}", topItem);
 
-        for (int i = 0; i <= aStack.Count; i++)
-                aStack.Pop();
-        
-        if (search.Length > 0)
-            findSearch = true;
+        foreach (var str in aStack)
+        {
+            if (str == search)
+            {
+                findSearch = true;
+                Console.WriteLine("Stack contains \"{0}\": {1}", search, findSearch);
+                break;
+            }
+        }
 
-        Console.WriteLine("Stack contains \"{0}\": {1}", search, findSearch);
+        if (findSearch == true)
+        {
+            for (int i = 0; i <= aStack.Count; i++)
+                aStack.Pop();
+        }
 
         aStack.Push(newItem);
 
