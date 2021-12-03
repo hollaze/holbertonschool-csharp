@@ -6,11 +6,11 @@ class MyStack
 {
     public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
     {
-        string topItem = aStack.Peek();
+        string topItem;
         bool findSearch = false;
         int count = 0, index = 0;
 
-        foreach (var str in aStack)
+        foreach (string str in aStack)
         {
             count += 1;
             if (str == search)
@@ -31,7 +31,10 @@ class MyStack
         if (count == 0)
             Console.WriteLine("Stack is empty");
         else
+        {
+            topItem = aStack.Peek();
             Console.WriteLine("Top item: {0}", topItem);
+        }
 
         Console.WriteLine("Stack contains \"{0}\": {1}", search, findSearch);
 
