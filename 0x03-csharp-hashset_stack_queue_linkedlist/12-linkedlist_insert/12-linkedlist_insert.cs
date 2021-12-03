@@ -13,16 +13,25 @@ class LList
         if (myLList.First == null)
             myLList.AddFirst(n);
 
-        current = myLList.First;
-
-        while (current != null)
+        else
         {
-            if (current.Value < n)
-                current = current.Next;
-            else
+            current = myLList.First;
+
+            while (current != null)
             {
-                myLList.AddBefore(current, n);
-                break;
+                if (myLList.Last.Value < n)
+                {
+                    myLList.AddLast(n);
+                    break;
+                }
+
+                if (current.Value < n)
+                    current = current.Next;
+                else
+                {
+                    myLList.AddBefore(current, n);
+                    break;
+                }
             }
         }
 
