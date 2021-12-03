@@ -7,11 +7,13 @@ class LList
     {
         LinkedListNode<int> current;
 
-        current = myLList.First;
+        if (myLList.First != null && index >= 0 && index < myLList.Count)
+        {
+            current = myLList.First;
 
-        for (int i = 0; i < index; i++)
-            current = current.Next;
-
-        myLList.Remove(current);
+            for (int i = 0; i < index; i++)
+                current = current.Next;
+            myLList.Remove(current);
+        }
     }
 }
