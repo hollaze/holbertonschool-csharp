@@ -5,22 +5,22 @@ class List
 {
     public static List<int> DifferentElements(List<int> list1, List<int> list2)
     {
-        List<int> newList = new List<int>();
-
+        List<int> differentValues = new List<int> ();
+        
+        // Values only in list1
         foreach (int value in list1)
         {
             if (!list2.Contains(value))
-                newList.Add(value);
+                differentValues.Add(value);
         }
-
+        // Values only in list2
         foreach (int value in list2)
         {
             if (!list1.Contains(value))
-                newList.Add(value);
+                differentValues.Add(value);
         }
 
-        newList.Sort();
-
-        return (newList);
+        differentValues.Sort();   
+        return differentValues;
     }
 }
