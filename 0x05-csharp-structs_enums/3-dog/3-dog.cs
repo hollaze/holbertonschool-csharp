@@ -13,12 +13,12 @@ struct Dog
     public float age;
     public string owner;
     public Rating rating;
-    public Dog(string dogName, float dogAge, string ownerName, Rating dogRating)
+    public Dog(string name, float age, string name, Rating rating)
     {
-        name = dogName;
-        age = dogAge;
-        owner = ownerName;
-        rating = dogRating;
+        this.name = name;
+        this.age = age;
+        this.owner = name;
+        this.rating = rating;
     }
 
     public override string ToString()
