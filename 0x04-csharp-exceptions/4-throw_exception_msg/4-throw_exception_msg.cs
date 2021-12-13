@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 class Except
 {
     public static void ThrowMsg(string msg)
@@ -8,4 +7,3 @@ class Except
         throw new Exception(msg);
     }
 }
-
