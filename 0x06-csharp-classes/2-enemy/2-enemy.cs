@@ -17,7 +17,7 @@ namespace Enemies
         }
         /// <summary>
         ///  Initializes a new instance of the <see cref="Zombie"/> class.
-        /// <param name="value">health value</param>
+        /// <param name="value">health value.</param>
         /// </summary>
         public Zombie(int value)
         {
