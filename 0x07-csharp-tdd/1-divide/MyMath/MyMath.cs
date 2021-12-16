@@ -26,7 +26,7 @@ namespace MyMath
                 {
                     for (int j = 0; j < matrix.GetLength(1); j++)
                     {
-                        newMatrix[i, j] = matrix[i, j] / num;
+                        newMatrix[i, j] /= num;
                     }
                 }
             }
