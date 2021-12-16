@@ -22,9 +22,9 @@ namespace MyMath
 
             try
             {
-                for (int i = 0; i < matrix.GetLength(0); i++)
+                for (int i = 0; i < newMatrix.GetLength(0); i++)
                 {
-                    for (int j = 0; j < matrix.GetLength(1); j++)
+                    for (int j = 0; j < newMatrix.GetLength(1); j++)
                     {
                         newMatrix[i, j] /= num;
                     }
