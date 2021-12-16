@@ -15,10 +15,12 @@ namespace MyMath
         /// <returns></returns>
         public static int[,] Divide(int[,] matrix, int num)
         {
-            int [,] newMatrix = matrix;
+            int [,] newMatrix;
 
             if (matrix == null)
                 return (null);
+            
+            newMatrix = (int[,]) matrix.Clone();
 
             try
             {
