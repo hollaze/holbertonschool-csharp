@@ -5,8 +5,6 @@ namespace MyMath.Tests
 {
     public class Tests
     {
-
-
         [TestFixture]
         public class tests1
         {
