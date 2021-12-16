@@ -16,11 +16,11 @@ namespace MyMath.Tests
         [Test]
         public void TestMaxInteger()
         {
-            List<int> nums = new List<int>() { -687, 0, 184987, 26, -2354699, 99999999, 1, 2, 3 };
+            List<int> nums = new List<int>() { -687, 0, 18498, 26, -23549, 999999, 1, 2, 3 };
             int maxInt;
 
             maxInt = MyMath.Operations.Max(nums);
-            Assert.AreEqual(99999999, maxInt);
+            Assert.AreEqual(999999, maxInt);
         }
     }
 }
