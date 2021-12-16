@@ -22,13 +22,5 @@ namespace MyMath.Tests
             maxInt = MyMath.Operations.Max(nums);
             Assert.AreEqual(99999999, maxInt);
         }
-
-        [Test]
-        public void TestNull()
-        {
-            List<int> nums = null;
-
-            Assert.AreEqual(0, MyMath.Operations.Max(nums));
-        }
     }
 }
