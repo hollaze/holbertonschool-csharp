@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace MyMath
@@ -17,8 +18,7 @@ namespace MyMath
         {
             if (nums.Count == 0)
                 return (0);
-            nums.Sort();
-            return (nums[nums.Count - 1]);
+            return (nums.Max());
         }
     }
 }
