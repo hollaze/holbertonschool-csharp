@@ -17,10 +17,22 @@ namespace MyMath.Tests
         public void TestMaxInteger()
         {
             List<int> nums = new List<int>() { -687, 0, 18498, 26, -23549, 999999, 1, 2, 3 };
-            int maxInt;
+            int maxInt = 0;
 
             maxInt = MyMath.Operations.Max(nums);
             Assert.AreEqual(999999, maxInt);
+
+            nums.Clear();
+            nums = new List<int>() { 5, 4, 3, 2, 1, 0 };
+
+            maxInt = MyMath.Operations.Max(nums);
+            Assert.AreEqual(5, maxInt);
+
+            nums.Clear();
+            nums = new List<int>() { -3, -2, -1, -3, -4, -5, -1 };
+
+            maxInt = MyMath.Operations.Max(nums);
+            Assert.AreEqual(-1, maxInt);
         }
     }
 }
