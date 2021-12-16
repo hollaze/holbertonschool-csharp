@@ -14,24 +14,11 @@ namespace MyMath.Tests
         }
 
         [Test]
-        public void TestIsMatrixNull()
-        {
-            int[,] newMatrix = new int[0, 2];
-            int num = 3;
-
-            newMatrix = new int[,] { { 185694982, -64, 0 } };
-            newMatrix = MyMath.Matrix.Divide(newMatrix, num);
-
-            Assert.IsNotNull(newMatrix);
-        }
-
-        [Test]
         public void TestGoodResult()
         {
-            int[,] newMatrix = new int[0, 2];
+            int[,] newMatrix = new int[,] { { 1856949, -64, 0 } };
             int num = 3, val1 = 1856949, res = val1 / num;
 
-            newMatrix = new int[,] { { 1856949, -64, 0 } };
             newMatrix = MyMath.Matrix.Divide(newMatrix, num);
 
             Assert.AreEqual(res, newMatrix[0, 0]);
@@ -63,12 +50,6 @@ namespace MyMath.Tests
             int num = 3;
 
             Assert.AreEqual(typeof(int[,]), MyMath.Matrix.Divide(newMatrix, num).GetType());
-        }
-
-        [Test]
-        public void TestEmpty()
-        {
-            Assert.Pass();
         }
     }
 }
