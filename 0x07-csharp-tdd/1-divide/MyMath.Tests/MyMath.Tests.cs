@@ -88,7 +88,7 @@ namespace MyMath.Tests
         [Test]
         public void TestEmpty()
         {
-
+            Assert.Pass();
         }
     }
 }
