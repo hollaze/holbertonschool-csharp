@@ -7,9 +7,20 @@ namespace MyMath.Tests
     public class Tests
     {
         [Test]
-        public void Test1()
+        public void TestEmpty()
         {
-            Assert.Pass();
+            List<int> nums = new List<int>();
+            Assert.AreEqual(0, MyMath.Operations.Max(nums));
+        }
+
+        [Test]
+        public void TestMaxInteger()
+        {
+            List<int> nums = new List<int>() {-687, 0, 184987, 26, -2354699, 99999999, 1, 2, 3};
+            int maxInt;
+
+            maxInt = MyMath.Operations.Max(nums);
+            Assert.AreEqual(99999999, maxInt);
         }
     }
 }
