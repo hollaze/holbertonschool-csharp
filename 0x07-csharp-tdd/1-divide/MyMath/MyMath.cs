@@ -17,7 +17,7 @@ namespace MyMath
         {
             int[,] newMatrix = matrix;
 
-            if (matrix == null)
+            if (matrix == null || newMatrix == null)
                 return (null);
 
             try
