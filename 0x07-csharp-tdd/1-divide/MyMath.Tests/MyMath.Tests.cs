@@ -44,24 +44,6 @@ namespace MyMath.Tests
                 Assert.AreEqual(val1 / num, newMatrix[0, 0]);
             }
 
-            [Test]
-            public void TestIndexOutOfRange()
-            {
-                int[,] newMatrix = new int[0, 2];
-                int num = 3;
-
-                newMatrix = new int[,] { { 185694982, -64, 0 } };
-                newMatrix = MyMath.Matrix.Divide(newMatrix, num);
-
-                if (newMatrix.GetLength(0) > MyMath.Matrix.Divide(newMatrix, num).GetLength(0)
-                    || newMatrix.GetLength(1) > MyMath.Matrix.Divide(newMatrix, num).GetLength(1))
-                {
-                    throw new IndexOutOfRangeException("Index out of range");
-                    throw new ArgumentOutOfRangeException("Argument out of range");
-                }
-
-                Assert.Pass();
-            }
         }
     }
 }
