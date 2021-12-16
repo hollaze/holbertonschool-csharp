@@ -15,7 +15,7 @@ namespace MyMath
         /// <returns></returns>
         public static int[,] Divide(int[,] matrix, int num)
         {
-            int[,] newMatrix = matrix;
+            int[,] newMatrix = new int[matrix.GetLength(0), matrix.GetLength(1)];
 
             if (matrix == null)
                 return (null);
@@ -26,7 +26,7 @@ namespace MyMath
                 {
                     for (int j = 0; j < matrix.GetLength(1); j++)
                     {
-                        newMatrix[i, j] /= num;
+                        newMatrix[i, j] = matrix[i, j] / num;
                     }
                 }
             }
