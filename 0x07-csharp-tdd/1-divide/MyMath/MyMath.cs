@@ -15,18 +15,16 @@ namespace MyMath
         /// <returns></returns>
         public static int[,] Divide(int[,] matrix, int num)
         {
-            int[,] newMatrix = matrix;
-
-            if (matrix == null || newMatrix == null)
+            if (matrix == null)
                 return (null);
 
             try
             {
-                for (int i = 0; i < newMatrix.GetLength(0); i++)
+                for (int i = 0; i < matrix.GetLength(0); i++)
                 {
-                    for (int j = 0; j < newMatrix.GetLength(1); j++)
+                    for (int j = 0; j < matrix.GetLength(1); j++)
                     {
-                        newMatrix[i, j] /= num;
+                        matrix[i, j] /= num;
                     }
                 }
             }
@@ -36,7 +34,7 @@ namespace MyMath
                 return (null);
             }
 
-            return (newMatrix);
+            return (matrix);
         }
     }
 }
