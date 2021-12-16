@@ -42,8 +42,6 @@ namespace MyMath.Tests
                 newMatrix = MyMath.Matrix.Divide(newMatrix, num);
 
                 Assert.AreEqual(val1 / num, newMatrix[0, 0]);
-                Assert.AreEqual(val2 / num, newMatrix[0, 1]);
-                Assert.AreEqual(val3 / num, newMatrix[0, 2]);
             }
 
             [Test]
