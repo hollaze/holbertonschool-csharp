@@ -9,7 +9,7 @@ namespace MyMath.Tests
         public class tests1
         {
             [Test]
-            public void TestIsDividedByZero()
+            public void Test1()
             {
                 int[,] newMatrix = new int[3, 3];
                 int num = 3;
@@ -21,7 +21,7 @@ namespace MyMath.Tests
             }
 
             [Test]
-            public void TestIsMatrixNull()
+            public void Test2()
             {
                 int[,] newMatrix = new int[0, 2];
                 int num = 3;
@@ -33,7 +33,7 @@ namespace MyMath.Tests
             }
 
             [Test]
-            public void TestGoodResult()
+            public void Test3()
             {
                 int[,] newMatrix = new int[0, 2];
                 int num = 3, val1 = 185694982;
