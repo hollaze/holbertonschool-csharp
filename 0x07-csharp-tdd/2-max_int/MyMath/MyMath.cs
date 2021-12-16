@@ -16,7 +16,7 @@ namespace MyMath
         /// <returns>max integer in nums list</returns>
         public static int Max(List<int> nums)
         {
-            if (nums.Count == 0)
+            if (nums.Count == 0 || nums == null)
                 return (0);
             return (nums.Max());
         }
