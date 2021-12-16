@@ -36,7 +36,7 @@ namespace MyMath.Tests
             public void TestGoodResult()
             {
                 int[,] newMatrix = new int[0, 2];
-                int num = 3, val1 = 185694982, val2 = -64, val3 = 0;
+                int num = 3, val1 = 185694982;
 
                 newMatrix = new int[,] { { 185694982, -64, 0 } };
                 newMatrix = MyMath.Matrix.Divide(newMatrix, num);
