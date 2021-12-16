@@ -5,32 +5,12 @@ namespace MyMath.Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void TestNullOrEmpty()
-        {
-            int[,] newMatrix = new int[3, 3];
-            int num = 3;
-
-            newMatrix = new int[,] { { 185694982, -64, 0 } };
-            newMatrix = MyMath.Matrix.Divide(newMatrix, num);
-
-            if (newMatrix == null)
-                Assert.IsNull(newMatrix);
-            if (newMatrix.Length == 0)
-                newMatrix = new int[3, 3];
-
-        }
-
         [Test]
-        public void TestIsDividedByZero()
+        public void TestNull()
         {
-            int[,] newMatrix = new int[3, 3];
-            int num = 3;
+            int [,] output = MyMath.Matrix.Divide(null, 2);
 
-            newMatrix = new int[,] { { 18, -64, 30 }, { 78, 21, 0 }, { 100, -98, 65489 } };
-
-            newMatrix = MyMath.Matrix.Divide(newMatrix, num);
-            Assert.AreNotEqual(0, num);
+            Assert.IsNull(output);
         }
 
         [Test]
@@ -49,12 +29,12 @@ namespace MyMath.Tests
         public void TestGoodResult()
         {
             int[,] newMatrix = new int[0, 2];
-            int num = 3, val1 = 185694982;
+            int num = 3, val1 = 1856949, res = val1 / num;
 
-            newMatrix = new int[,] { { 185694982, -64, 0 } };
+            newMatrix = new int[,] { { 1856949, -64, 0 } };
             newMatrix = MyMath.Matrix.Divide(newMatrix, num);
 
-            Assert.AreEqual(val1 / num, newMatrix[0, 0]);
+            Assert.AreEqual(res, newMatrix[0, 0]);
         }
 
         [Test]
