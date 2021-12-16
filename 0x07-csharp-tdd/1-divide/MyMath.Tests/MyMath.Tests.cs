@@ -23,27 +23,40 @@ namespace MyMath.Tests
                 {4, 5, 6}
             };
 
-            int[,] newMatrix = MyMath.Matrix.Divide(matrix, 0);
+            matrix = MyMath.Matrix.Divide(matrix, 0);
 
-            Assert.IsNull(newMatrix);
+            Assert.IsNull(matrix);
         }
 
         [Test]
         public void TestGoodResult()
         {
-            int[,] matrix = new int[,] { { 1856949, -64, 0 } };
-            int num = 3, val1 = 1856949, res = val1 / num;
+            int num = 3;
+
+            int[,] matrix = new int[,]
+            {
+                { 1856949, -64, 0 }
+            };
+
+            int[,] goodResult = new int[,]
+            {
+                { matrix[0, 0] / num, matrix[0, 1] / num, matrix[0, 2] / num}
+            };
 
             matrix = MyMath.Matrix.Divide(matrix, num);
 
-            Assert.AreEqual(res, matrix[0, 0]);
+            Assert.AreEqual(goodResult, matrix);
         }
 
         [Test]
         public void TestIndexOutOfRange()
         {
-            int[,] matrix = new int[,] { { 185694982, -64, 0 } };
             int num = 3;
+
+            int[,] matrix = new int[,]
+            {
+                { 185694982, -64, 0 }
+            };
 
             matrix = MyMath.Matrix.Divide(matrix, num);
 
