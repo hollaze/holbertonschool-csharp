@@ -1,12 +1,12 @@
 ﻿using System;
 
 /// <summary>
-/// Object class
+/// Object class.
 /// </summary>
 class Obj
 {
     /// <summary>
-    /// Print object properties and methods
+    /// Print object properties and methods.
     /// </summary>
     /// <param name="myObj">object</param>
     public static void Print(object myObj)
