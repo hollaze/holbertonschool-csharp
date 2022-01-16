@@ -18,7 +18,7 @@ class VectorMath
         if (vector1.Length < 2 || vector1.Length > 3
             || vector2.Length < 2 || vector2.Length > 3
             || vector1.Length != vector2.Length)
-            return (-1);
+            return (new double[1] { -1 });
 
         for (int i = 0; i < vector1.Length; i++)
         {
