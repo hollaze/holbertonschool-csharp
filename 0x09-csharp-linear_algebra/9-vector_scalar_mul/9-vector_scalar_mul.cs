@@ -16,7 +16,7 @@ class VectorMath
         double[] scaledVector = new double[3];
 
         if (vector.Length < 2 || vector.Length > 3)
-            return (-1);
+            return (new double[1] { - 1 });
         
         for (int i = 0; i < vector.Length; i++)
             scaledVector[i] = vector[i] * scalar;
