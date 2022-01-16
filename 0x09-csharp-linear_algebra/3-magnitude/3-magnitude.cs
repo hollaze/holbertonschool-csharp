@@ -14,7 +14,7 @@ class VectorMath
     {
         double magnitude = 0;
 
-        if (vector.Length <= 1)
+        if (vector.Length < 2 || vector.Length > 3)
             return (-1);
 
         if (vector.Length == 2)
@@ -27,6 +27,6 @@ class VectorMath
             magnitude = Math.Pow(vector[0], 2) + Math.Pow(vector[1], 2) + Math.Pow(vector[2], 2);
         }
 
-        return (Math.Sqrt(magnitude));
+        return (Math.Round(2, Math.Sqrt(magnitude)));
     }
 }
