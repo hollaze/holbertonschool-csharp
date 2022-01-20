@@ -14,7 +14,7 @@ class MatrixMath
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
         // Check if matrix is 2D
-        if (matrix.GetLength(0) != 2 && matrix.GetLength(1) != 2)
+        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
             return (new double[,] { { -1 } });
 
         double cos = Math.Cos(angle);
