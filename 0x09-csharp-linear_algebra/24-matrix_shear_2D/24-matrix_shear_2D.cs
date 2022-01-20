@@ -26,10 +26,12 @@ class MatrixMath
             {
                 if (direction == 'x' && col == 0)
                 {
+                    matrixRes[row, col + 1] = matrix[row, col + 1];
                     matrixRes[row, col] = matrix[row, col] + factor * matrix[row, col + 1];
                 }
                 else if (direction == 'y' && col == 1)
                 {
+                    matrixRes[row, col - 1] = matrix[row, col - 1];
                     matrixRes[row, col] = matrix[row, col] + factor * matrix[row, col - 1];
                 }
             }
