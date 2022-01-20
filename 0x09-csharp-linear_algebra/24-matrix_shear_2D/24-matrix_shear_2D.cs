@@ -15,7 +15,7 @@ class MatrixMath
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
         if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2 ||
-            direction != "x" || direction != "y")
+            direction != 'x' || direction != 'y')
             return (new double[,] { { -1 } });
 
         double[,] matrixRes = new double[2, 2];
@@ -24,11 +24,11 @@ class MatrixMath
         {
             for (int col = 0; col < matrix.GetLength(1); col++)
             {
-                if (direction == "x" && col == 0)
+                if (direction == 'x' && col == 0)
                 {
                     matrixRes[row, col] = matrix[row, col] + factor * matrix[row, col + 1];
                 }
-                else if (direction == "y" && col == 1)
+                else if (direction == 'y' && col == 1)
                 {
                     matrixRes[row, col] = matrix[row, col] + factor * matrix[row, col - 1];
                 }
