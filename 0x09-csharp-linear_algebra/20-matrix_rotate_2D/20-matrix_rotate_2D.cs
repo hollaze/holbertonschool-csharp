@@ -19,8 +19,10 @@ class MatrixMath
 
         double cos = Math.Cos(angle);
         double sin = Math.Sin(angle);
-        double[,] matrixRotation2D = new double[2, 2];
+        double[,] matrixRotation2D = new double[,] { { cos, -sin },
+                                                     { sin, cos } };
         double[,] matrixRes = new double[matrix.GetLength(0), matrix.GetLength(1)];
+
 
         for (int row = 0; row < matrix.GetLength(0); row++)
         {
