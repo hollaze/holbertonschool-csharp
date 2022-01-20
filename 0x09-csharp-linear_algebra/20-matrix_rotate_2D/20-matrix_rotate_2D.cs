@@ -22,17 +22,6 @@ class MatrixMath
         double[,] matrixRotation2D = new double[2, 2];
         double[,] matrixRes = new double[matrix.GetLength(0), matrix.GetLength(1)];
 
-        if (angle > 0)
-        {
-            matrixRotation2D = new double[,] { { cos, -sin },
-                                               { sin, cos } };
-        }
-        else if (angle < 0)
-        {
-            matrixRotation2D = new double[,] { { cos, sin },
-                                               { -sin, cos } };
-        }
-
         for (int row = 0; row < matrix.GetLength(0); row++)
         {
             for (int col = 0; col < matrix.GetLength(1); col++)
