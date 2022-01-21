@@ -32,7 +32,8 @@ class MatrixMath
                 {
                     matrixRes[row, col] += matrixRotation2D[col, i] * matrix[row, i];
                 }
-                matrixRes[row, col] = Math.Round(matrixRes[row, col], 2);
+                // 2 times round because it did not round up with 5 number
+                matrixRes[row, col] = Math.Round(Math.Round(matrixRes[row, col], 3), 2);
             }
         }
 
