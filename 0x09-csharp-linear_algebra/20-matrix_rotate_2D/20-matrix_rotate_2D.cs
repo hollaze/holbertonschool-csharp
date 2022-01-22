@@ -21,13 +21,13 @@ class MatrixMath
         double sin = Math.Sin(angle);
         double[,] matrixRotation2D = new double[,] { { cos, -sin },
                                                      { sin, cos } };
-        double[,] matrixRes = new double[matrix.GetLength(0), matrix.GetLength(1)];
+        double[,] matrixRes = new double[2, 2];
         double storeNumber;
 
 
         for (int row = 0; row < matrix.GetLength(0); row++)
         {
-            for (int col = 0; col < matrix.GetLength(1); col++)
+            for (int col = 0; col < matrix.GetLength(0); col++)
             {
                 storeNumber = 0;
                 for (int i = 0; i < matrix.GetLength(0); i++)
