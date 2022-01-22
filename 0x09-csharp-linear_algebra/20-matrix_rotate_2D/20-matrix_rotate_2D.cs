@@ -22,18 +22,20 @@ class MatrixMath
         double[,] matrixRotation2D = new double[,] { { cos, -sin },
                                                      { sin, cos } };
         double[,] matrixRes = new double[matrix.GetLength(0), matrix.GetLength(1)];
+        double storeNumber;
 
 
         for (int row = 0; row < matrix.GetLength(0); row++)
         {
             for (int col = 0; col < matrix.GetLength(1); col++)
             {
+                storeNumber = 0;
                 for (int i = 0; i < matrix.GetLength(0); i++)
                 {
-                    matrixRes[row, col] += matrixRotation2D[col, i] * matrix[row, i];
+                    storeNumber += matrixRotation2D[col, i] * matrix[row, i];
                 }
                 // 2 times round because it did not round up with 5 number
-                matrixRes[row, col] = Math.Round(Math.Round(matrixRes[row, col], 3), 2);
+                matrixRes[row, col] = Math.Round(storeNumber, 2);
             }
         }
 
