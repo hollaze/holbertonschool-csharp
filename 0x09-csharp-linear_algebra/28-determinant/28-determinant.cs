@@ -12,9 +12,8 @@ class MatrixMath
     /// <returns>Determinant of the matrix</returns>
     public static double Determinant(double[,] matrix)
     {
-        int matrixLength = matrix.GetLength(0);
-
-        if (matrixLength < 2 || matrixLength > 3 ||
+        if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3 ||
+            matrix.GetLength(1) < 2 || matrix.GetLength(1) > 3 ||
             matrix.GetLength(0) != matrix.GetLength(1))
         {
             return (new double[,] { { -1 } });
@@ -22,7 +21,7 @@ class MatrixMath
 
         double determinant2x2 = 0;
 
-        if (matrixLength == 2)
+        if (matrix.GetLength(0) == 2)
         {
             determinant2x2 = matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
             return (Math.Round(determinant2x2), 2);
@@ -41,10 +40,11 @@ class MatrixMath
         determinant3x3Pos += (matrix[0, 1] * matrix[1, 2] * matrix[2, 0]);
         determinant3x3Pos += (matrix[0, 2] * matrix[1, 0] * matrix[2, 1]);
 
-        determinant3x3Neg = matrix[0, 2] * matrix[1, 1] * matrix[3, 0];
+        determinant3x3Neg = matrix[0, 2] * matrix[1, 1] * matrix[2, 0];
         determinant3x3Neg -= (matrix[0, 1] * matrix[1, 0] * matrix[2, 2]);
         determinant3x3Neg -= (matrix[0, 0] * matrix[1, 2] * matrix[2, 1]);
 
         return (Math.Round(determinant3x3Pos - determinant3x3Neg), 2);
     }
 }
+
