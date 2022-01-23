@@ -45,6 +45,6 @@ class MatrixMath
         determinant3x3Neg -= (matrix[0, 1] * matrix[1, 0] * matrix[2, 2]);
         determinant3x3Neg -= (matrix[0, 0] * matrix[1, 2] * matrix[2, 1]);
 
-        return (Math.Round(determinant3x3Pos - determinant3x3Neg), 2);
+        return (determinant3x3Pos - determinant3x3Neg);
     }
 }
