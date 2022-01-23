@@ -28,12 +28,6 @@ class MatrixMath
             return (determinant2x2);
         }
 
-        // I really hate static code (when it's my code)
-        // but doing determinant algorithm for NxN matrix is
-        // too much for me, sorry for the one that sees this
-        // (sorry for myself too ...)
-
-        // Positive and Negative
         double determinant3x3Pos = 0;
         double determinant3x3Neg = 0;
 
