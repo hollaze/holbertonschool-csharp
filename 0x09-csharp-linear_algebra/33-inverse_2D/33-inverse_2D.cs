@@ -70,14 +70,14 @@ class MatrixMath
         }
         
         double inverseDeterminant = 1 / DeterminantMatrix.Determinant(matrix);
-        double[,] newMatrix = newdouble[2, 2];
-        int i = 0;
+        double[,] newMatrix = new double[2, 2];
         
-        
-        foreach (double value in matrix)
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            newMatrix[i] = value * inverseDeterminant;
-            i++;
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                newMatrix[i, j] = matrix[i, j] * inverseDeterminant;
+            }
         }
         
         return (newMatrix);
