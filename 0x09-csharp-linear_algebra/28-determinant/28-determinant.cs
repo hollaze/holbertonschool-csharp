@@ -16,7 +16,7 @@ class MatrixMath
             matrix.GetLength(1) < 2 || matrix.GetLength(1) > 3 ||
             matrix.GetLength(0) != matrix.GetLength(1))
         {
-            return (new double[,] { { -1 } });
+            return ((double) -1);
         }
 
         double determinant2x2 = 0;
@@ -24,7 +24,7 @@ class MatrixMath
         if (matrix.GetLength(0) == 2)
         {
             determinant2x2 = matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
-            return (Math.Round(determinant2x2), 2);
+            return (Math.Round(determinant2x2, 2));
         }
 
         // I really hate static code (when it's my code)
@@ -44,7 +44,6 @@ class MatrixMath
         determinant3x3Neg -= (matrix[0, 1] * matrix[1, 0] * matrix[2, 2]);
         determinant3x3Neg -= (matrix[0, 0] * matrix[1, 2] * matrix[2, 1]);
 
-        return (Math.Round(determinant3x3Pos - determinant3x3Neg), 2);
+        return (Math.Round(determinant3x3Pos - determinant3x3Neg, 2));
     }
 }
-
