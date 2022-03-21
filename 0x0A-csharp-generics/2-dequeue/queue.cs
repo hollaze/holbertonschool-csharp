@@ -60,6 +60,7 @@ class Queue<T>
         else
         {
             tail.next = temp;
+            tail = temp;
         }
 
         this.count += 1;
@@ -77,13 +78,11 @@ class Queue<T>
             // default value
             return default(T);
         }
-        else
-        {
-            T headValue = head.value;
-            head = head.next;
-            this.count -= 1;
-            return headValue;
-        }
+
+        T headValue = head.value;
+        head = head.next;
+        this.count -= 1;
+        return headValue;
     }
 
     /// <summary>
