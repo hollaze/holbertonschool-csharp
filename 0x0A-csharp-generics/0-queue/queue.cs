@@ -3,7 +3,6 @@
 /// <summary>
 /// Generic class
 /// </summary>
-/// <typeparam name="T">Generic type</typeparam>
 class Queue<T>
 {
     /// <summary>
