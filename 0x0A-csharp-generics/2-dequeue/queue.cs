@@ -71,7 +71,7 @@ class Queue<T>
     /// <returns>Value of the first node</returns>
     public T Dequeue()
     {
-        if (count == 0)
+        if (head == null)
         {
             Console.WriteLine("Queue is empty");
             // default value
@@ -80,7 +80,7 @@ class Queue<T>
 
         T headValue = head.value;
         head = head.next;
-        count -= 1;
+        this.count -= 1;
         return headValue;
     }
 
