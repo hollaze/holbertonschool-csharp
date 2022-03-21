@@ -1,12 +1,12 @@
 ﻿using System;
 
 /// <summary>
-/// Generic class
+/// Generic class.
 /// </summary>
 class Queue<T>
 {
     /// <summary>
-    /// Check type of T
+    /// Check type of T.
     /// </summary>
     /// <returns>Queue's type</returns>
     public string CheckType()
