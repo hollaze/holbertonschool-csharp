@@ -1,0 +1,11 @@
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\bin\Debug\netcoreapp2.1\InventoryLibrary.deps.json
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\bin\Debug\netcoreapp2.1\InventoryLibrary.dll
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\bin\Debug\netcoreapp2.1\InventoryLibrary.pdb
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.csprojAssemblyReference.cache
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.csproj.CoreCompileInputs.cache
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.AssemblyInfoInputs.cache
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.AssemblyInfo.cs
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.dll
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\obj\Debug\netcoreapp2.1\InventoryLibrary.pdb
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\bin\Debug\netcoreapp2.1\InventoryLibrary.runtimeconfig.json
+D:\Holberton_year_2\holbertonschool-csharp\0x0D-csharp-text_based_interface\InventoryLibrary\bin\Debug\netcoreapp2.1\InventoryLibrary.runtimeconfig.dev.json
